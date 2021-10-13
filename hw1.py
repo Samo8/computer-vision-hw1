@@ -242,7 +242,7 @@ def second_deriv_image(image: np.ndarray, sigma: float, in_place: bool = False) 
     return gaussian_blur_image(image, sigma, in_place)
 
 
-# new_im = second_deriv_image(image_cactus_rgb, 1.0)
+# new_im = second_deriv_image(image_cactus_rgb, 4.0)
 # save_img("task4c.png", new_im)
 # plt.figure()
 # plt.imshow(new_im)
@@ -269,10 +269,10 @@ def sharpen_image(image: np.ndarray, sigma: float, alpha: float, in_place: bool 
     return np.clip(result_img, 0, 255).astype(np.uint8)
 
 
-new_im = sharpen_image(image_yosemite_rgb, 1.0, 1.5)
-plt.figure()
-plt.imshow(new_im)
-plt.show()
+# new_im = sharpen_image(image_yosemite_rgb, 1.0, 1.5)
+# plt.figure()
+# plt.imshow(new_im)
+# plt.show()
 # save_img("task5.png", new_im)
 
 
@@ -433,6 +433,7 @@ def find_peaks_image(image: np.ndarray, thres: float, in_place: bool = False) ->
 # plt.figure()
 # plt.imshow(new_im)
 # plt.show()
+# save_img("task8.png", new_im)
 
 """
 Task 9 (a): K-means color clustering with random seeds (extra task)
